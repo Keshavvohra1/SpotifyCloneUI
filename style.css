@@ -1,0 +1,478 @@
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1db954, #191414);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Header Layout */
+header {
+  display: flex;
+  justify-content: space-between; /* Logo on left, menu on right */
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Logo text */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Nav links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+/* Nav buttons */
+nav ul li {
+  font-size: 14px;
+}
+
+nav ul li button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  gap: 20px;
+}
+
+/* Main Heading */
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Subtext */
+.hero p {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+/* Call to Action Button */
+.hero .cta {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #1ed760;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero .cta {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+/*  */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1db954, #191414);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.hero .cta {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #1ed760;
+}
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main container layout */
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+    /* leave space for bottom bar */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.nav-links p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.playlist-section {
+    background-color: #242424;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.playlist-section p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.playlist-section button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-links {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+/* Buttons */
+.signup,
+.login {
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.signup {
+    background: transparent;
+    color: white;
+}
+
+.login {
+    background-color: white;
+    color: black;
+}
+
+
+/* Bottom promo bar */
+.bottom-bar {
+    background-color: #af2896;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.bottom-bar button {
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.trending-section {
+  margin-bottom: 40px;
+}
+
+.trending-section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Grid layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.card {
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #282828;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.artists-section {
+  margin-top: 40px;
+}
+
+.artists-section h2 {
+  margin-bottom: 15px;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.artist-card {
+  text-align: center;
+}
+
+.artist-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #1db954;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin-bottom: 8px;
+}
+
+.artist-card p {
+  font-size: 14px;
+  color: white;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* So it works on small screens */
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 400px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.search-bar::placeholder {
+  color: #bbb;
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar {
+  overflow-y: auto;
+}
+.main-content {
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: #121212;
+  }
+
+  .nav-links, .playlist-section {
+    display: none; /* hide for now */
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+  .footer-links{
+    margin-top: -27px;
+  }
+}
+.spotify-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: #121212;
+  }
+
+  .nav-links,
+  .playlist-section,
+  .footer-links {
+    display: none !important; /* Completely hides and removes space */
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+}
+
+
+
+
